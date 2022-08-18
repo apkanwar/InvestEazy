@@ -1,2 +1,2 @@
-# invest-eazy
+# Invest Eazy
 An Investing Platform
