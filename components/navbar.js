@@ -4,7 +4,7 @@ import CompanyLogo from '../public/vercel.ico'
 
 export default function Navbar() {
   return (
-    <navbar>
+    <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <div className={styles.navLogo}>
@@ -19,15 +19,25 @@ export default function Navbar() {
         </li>
         <li className={styles.navItem}>
           <a className={styles.pageLink}>
-            Contact
+            Properties
+          </a>
+        </li>
+        <li className={styles.navItem}>
+          <a className={styles.pageLink}>
+            Blog
+          </a>
+        </li>
+        <li className={styles.navItem}>
+          <a className={styles.pageLink}>
+            Reviews
           </a>
         </li>
         <li className={styles.navItem}>
           <button className={styles.navButton}>
-            Login
+            Log In
           </button>
         </li>
       </ul>
-    </navbar>
+    </nav>
   )
 }

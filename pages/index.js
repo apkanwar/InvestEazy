@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/pages.module.css'
 
 import Navbar from '../components/navbar'
+import HomeBanner from '../components/banner_style1'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      
+      <HomeBanner />
     </>
   )
 }
