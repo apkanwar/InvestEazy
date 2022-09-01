@@ -3,6 +3,9 @@ import styles from '../styles/pages.module.css'
 
 import Navbar from '../components/navbar'
 import HomeBanner from '../components/banner_style1'
+import Description from '../components/image_left'
+import RowLayout from '../components/rowLayout'
+import BoxRows from '../components/boxRows'
 
 export default function Home() {
   return (
@@ -15,6 +18,9 @@ export default function Home() {
 
       <Navbar />
       <HomeBanner />
+      <Description />
+      <RowLayout />
+      <BoxRows />
     </>
   )
 }
