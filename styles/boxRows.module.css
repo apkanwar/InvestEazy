@@ -11,7 +11,7 @@
   max-width: 1307px;
   margin: auto;
   width: 100%;
-  padding-top: 100px;
+  padding-top: 0px;
 }
 
 .flexContainer {
@@ -37,18 +37,6 @@
   line-height: 0;
   color: #112854;
 }
-.value {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 0;
-  color: #112854;
-}
-.detail {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 2.5em;
-  color: darkgray;
-}
 
 .info > span {
   border-radius: 20px 20px 0 0;
@@ -57,6 +45,56 @@
 .propertyDetails {
   background: white;
   padding: 4px 1em;
-  line-height: 1.2em;
   border-radius: 0px 0px 20px 20px;
+  color: #112854;
+}
+
+.propertyDetails p {
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+.tagContainer {
+  max-width: 1307px;
+  margin: auto;
+  padding: 2.5em 5rem 100px 0;
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+.tag {
+  color: #112854;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.arrow {
+  height: 2px;
+  width: 25px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 4px;
+  margin-left: 15px;
+  background: #112854;
+}
+.arrow:before,
+.arrow:after {
+  content: "";
+  background: #112854;
+  position: absolute;
+  height: 2px;
+  width: 10px;
+  border-radius: 30%;
+}
+.arrow:before {
+  right: -2px;
+  bottom: -3px;
+  transform: rotate(-45deg);
+}
+.arrow:after {
+  right: -2px;
+  top: -3px;
+  transform: rotate(45deg);
 }

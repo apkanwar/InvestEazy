@@ -1,4 +1,4 @@
-import styles from '../styles/BoxRows.module.css'
+import styles from '../styles/boxRows.module.css'
 import Image from 'next/image'
 import HotelImage from '../public/hotel.webp'
 
@@ -40,8 +40,12 @@ export default function BoxRows() {
           </div>
         </div>
       </div>
-
-      <div>View All Properties</div>
+      <div className={styles.tagContainer}>
+        <div className={styles.tag}>
+          View All Properties
+          <span className={styles.arrow}></span>
+        </div>
+      </div>
     </div>
   )
 }
