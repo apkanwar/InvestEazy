@@ -6,6 +6,8 @@ import HomeBanner from '../components/banner_style1'
 import Description from '../components/image_left'
 import RowLayout from '../components/rowLayout'
 import BoxRows from '../components/boxRows'
+import HowItWorks from '../components/banner_style2'
+import Footer from '../components/footer'
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
       <Description />
       <RowLayout />
       <BoxRows />
+      <HowItWorks />
+      <Footer />
     </>
   )
 }
