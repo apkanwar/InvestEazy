@@ -48,6 +48,7 @@
   text-decoration: none;
   color: black;
   font-weight: 500;
+  padding-left: 16px;
 }
 .pageLink:hover {
   color: #169BD7;
@@ -58,12 +59,14 @@
   color: white;
   border: none;
   outline: none;
-  border-radius: 0.2rem;
+  border-radius: 12px;
   padding: 0.5rem 1rem;
+  margin-left: 16px;
   cursor: pointer;
   font-weight: 500;
   font-size: 1rem;
 }
 .navButton:hover {
   background: #112854;
+  transition: 0.5s;
 }

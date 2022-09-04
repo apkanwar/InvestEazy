@@ -58,11 +58,12 @@
 }
 
 .icon {
-  width: 11.1111111;
-  margin: auto;
-  padding: 12px 40px;
-  cursor: pointer;
+  width: 11.1111111%;
+  padding: 10px 0px;
+  margin: 80px 0px 50px 0px;
+  text-align: center;
   border-radius: 12px;
+  cursor: pointer;
 }
 .icon:hover {
   background: #DCDCDC;

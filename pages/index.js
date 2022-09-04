@@ -2,11 +2,11 @@ import Head from 'next/head'
 import styles from '../styles/pages.module.css'
 
 import Navbar from '../components/navbar'
-import HomeBanner from '../components/banner_style1'
+import HomeBanner from '../components/full_banner'
 import Description from '../components/image_left'
-import RowLayout from '../components/rowLayout'
-import BoxRows from '../components/boxRows'
-import HowItWorks from '../components/banner_style2'
+import RowLayout from '../components/row_layout'
+import BoxRows from '../components/property_grid'
+import HowItWorks from '../components/full_card'
 import Footer from '../components/footer'
 
 export default function Home() {
