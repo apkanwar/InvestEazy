@@ -1,8 +1,9 @@
 import styles from '../styles/property_grid.module.css'
 import Image from 'next/image'
 import HotelImage from '../public/hotel.webp'
+import Link from 'next/link'
 
-export default function BoxRows() {
+export default function PropertyGrid() {
   return (
     <div className={styles.container}>
       <div className={styles.sectionTitle}>
@@ -10,7 +11,9 @@ export default function BoxRows() {
       </div>
       <div className={styles.flexContainer}>
         <div className={styles.info}>
-          <Image src={HotelImage} />
+          <div className={styles.imageContainer}>
+            <Image src={HotelImage} height={1100} />
+          </div>
           <div className={styles.propertyDetails}>
             <h3>Brampton Apartments</h3>
             <h4>123 Property Lane</h4>
@@ -20,7 +23,9 @@ export default function BoxRows() {
           </div>
         </div>
         <div className={styles.info}>
-          <Image src={HotelImage} />
+          <div className={styles.imageContainer}>
+            <Image src={HotelImage} height={1100} />
+          </div>
           <div className={styles.propertyDetails}>
             <h3>Brampton Apartments</h3>
             <h4>123 Property Lane</h4>
@@ -30,7 +35,9 @@ export default function BoxRows() {
           </div>
         </div>
         <div className={styles.info}>
-          <Image src={HotelImage} />
+          <div className={styles.imageContainer}>
+            <Image src={HotelImage} height={1100} />
+          </div>
           <div className={styles.propertyDetails}>
             <h3>Brampton Apartments</h3>
             <h4>123 Property Lane</h4>
@@ -41,10 +48,12 @@ export default function BoxRows() {
         </div>
       </div>
       <div className={styles.tagContainer}>
-        <div className={styles.tag}>
-          View All Properties
-          <span className={styles.arrow}></span>
-        </div>
+        <Link href="/properties">
+          <div className={styles.tag}>
+            View All Properties
+            <span className={styles.arrow}></span>
+          </div>
+        </Link>
       </div>
     </div>
   )

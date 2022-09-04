@@ -1,9 +1,10 @@
 import Head from 'next/head'
 
-import Navbar from '../components/navbar'
-import HomeBanner from '../components/full_banner'
+import BannerNav from '../components/banner_nav'
+import AllProperties from '../components/all_properties'
+import Footer from '../components/footer'
 
-export default function Home() {
+export default function Properties() {
   return (
     <>
       <Head>
@@ -12,8 +13,9 @@ export default function Home() {
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
-      <Navbar />
-      <HomeBanner />
+      <BannerNav />
+      <AllProperties />
+      <Footer />
     </>
   )
 }

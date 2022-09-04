@@ -5,7 +5,7 @@ import Navbar from '../components/navbar'
 import HomeBanner from '../components/full_banner'
 import Description from '../components/image_left'
 import RowLayout from '../components/row_layout'
-import BoxRows from '../components/property_grid'
+import PropertyGrid from '../components/property_grid'
 import HowItWorks from '../components/full_card'
 import Footer from '../components/footer'
 
@@ -22,7 +22,7 @@ export default function Home() {
       <HomeBanner />
       <Description />
       <RowLayout />
-      <BoxRows />
+      <PropertyGrid />
       <HowItWorks />
       <Footer />
     </>

@@ -1,6 +1,8 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
-import Icon from '../public/vercel.ico'
+import FacebookIcon from '../public/facebook.svg'
+import InstagramIcon from '../public/instagram.svg'
+import LinkedInIcon from '../public/linkedin.svg'
 
 export default function Footer() {
   return (
@@ -19,13 +21,13 @@ export default function Footer() {
           <h2 className={styles.value}>(416) 341-1000</h2>
         </div>
         <div className={styles.icon}>
-          <Image src={Icon} width={48} height={48} />
+          <Image src={FacebookIcon} width={48} height={48} />
         </div>
         <div className={styles.icon}>
-          <Image src={Icon} width={48} height={48} />
+          <Image src={InstagramIcon} width={48} height={48} />
         </div>
         <div className={styles.icon}>
-          <Image src={Icon} width={48} height={48} />
+          <Image src={LinkedInIcon} width={48} height={48} />
         </div>
       </div>
       <div className={styles.toc}>

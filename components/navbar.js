@@ -1,16 +1,19 @@
 import styles from '../styles/navbar.module.css'
 import Image from 'next/image'
 import CompanyLogo from '../public/vercel.ico'
+import Link from 'next/link'
 
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <div className={styles.navLogo}>
-            <Image src={CompanyLogo} width={48} height={48}/>
-            <span>InvestEazy</span>
-          </div>
+          <Link href="/">
+            <div className={styles.navLogo}>
+              <Image src={CompanyLogo} width={48} height={48} />
+              <span>InvestEazy</span>
+            </div>
+          </Link>
         </li>
         <li className={styles.navItem}>
           <a className={styles.pageLink}>
@@ -18,9 +21,11 @@ export default function Navbar() {
           </a>
         </li>
         <li className={styles.navItem}>
-          <a className={styles.pageLink}>
-            Properties
-          </a>
+          <Link href="/properties">
+            <a className={styles.pageLink}>
+              Properties
+            </a>
+          </Link>
         </li>
         <li className={styles.navItem}>
           <a className={styles.pageLink}>
