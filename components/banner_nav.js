@@ -29,20 +29,26 @@ export default function BannerNav() {
             </Link>
           </li>
           <li className={styles.navItem}>
+          <Link href="/under_construction">
             <a className={styles.pageLink}>
               Blog
             </a>
-          </li>
-          <li className={styles.navItem}>
+          </Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/under_construction">
             <a className={styles.pageLink}>
               Reviews
             </a>
-          </li>
-          <li className={styles.navItem}>
+          </Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/under_construction">
             <button className={styles.navButton}>
               Log In
             </button>
-          </li>
+          </Link>
+        </li>
         </ul>
       </nav>
 
