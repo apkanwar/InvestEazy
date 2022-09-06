@@ -2,7 +2,7 @@ import styles from '../styles/all_properties.module.css'
 import Image from 'next/image'
 import HotelImage from '../public/hotel.webp'
 
-export default function AllProperties() {
+export default function AllProperties({ data }) {
   return (
     <div className={styles.container}>
       <div className={styles.sectionTitle}>
@@ -10,93 +10,38 @@ export default function AllProperties() {
       </div>
 
       <div className={styles.flexContainer}>
-        <div className={styles.info}>
-          <div className={styles.imageContainer}>
-            <Image src={HotelImage} height={1100} />
-            <div className={styles.progress}>
-              <div className={styles.propertyType}>
-                <div className={styles.type}>
-                  Lending
+        {data.map(property => {
+          return (
+            <div className={styles.info}>
+              <div className={styles.imageContainer}>
+                <Image src={"/../public/" + property.image} height={1100} width={1100} />
+                <div className={styles.progress}>
+                  <div className={styles.propertyType}>
+                    <div className={styles.type}>
+                      {property.type}
+                    </div>
+                  </div>
+                  <div className={styles.progressValue}>
+                    <div className={styles.value}>
+                      {property.investmentGained / property.investmentNeeded * 100}%
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className={styles.progressValue}>
-                <div className={styles.value}>
-                  25%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.propertyDetails}>
-            <h3>London Apartments</h3>
-            <h4>123 Property Lane</h4>
-            <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
-            </p>
-            <div className={styles.propertyButton}>
-              Learn More
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.info}>
-          <div className={styles.imageContainer}>
-            <Image src={HotelImage} height={1100} />
-            <div className={styles.progress}>
-              <div className={styles.propertyType}>
-                <div className={styles.type}>
-                  Acquisitions
-                </div>
-              </div>
-              <div className={styles.progressValue}>
-                <div className={styles.value}>
-                  20%
+              <div className={styles.propertyDetails}>
+                <h3>{property.name}</h3>
+                <h4>{property.address}</h4>
+                <p>
+                  {property.description}
+                </p>
+                <div className={styles.propertyButton}>
+                  Learn More
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.propertyDetails}>
-            <h3>Brampton Apartments</h3>
-            <h4>123 Property Lane</h4>
-            <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
-            </p>
-            <div className={styles.propertyButton}>
-              Learn More
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.info}>
-          <div className={styles.imageContainer}>
-            <Image src={HotelImage} height={1100} />
-            <div className={styles.progress}>
-              <div className={styles.propertyType}>
-                <div className={styles.type}>
-                  Acquisitions
-                </div>
-              </div>
-              <div className={styles.progressValue}>
-                <div className={styles.value}>
-                  10%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className={styles.propertyDetails}>
-            <h3>Toronto Apartments</h3>
-            <h4>123 Property Lane</h4>
-            <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
-            </p>
-            <div className={styles.propertyButton}>
-              Learn More
-            </div>
-          </div>
-        </div>
+          )
+        })}
       </div>
-
-
-
 
       <div className={styles.sectionTitle}>
         <h1 className={styles.title}>Recently Closed Properties</h1>

@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "London Apartments",
+      "description": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "address": "123 Property Lane",
+      "type": "Lending",
+      "investmentNeeded": 100000,
+      "investmentGained": 25000,
+      "image": "hotel.webp"
+    },
+    {
+      "id": 2,
+      "name": "Brampton Apartments",
+      "description": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "address": "123 Property Lane",
+      "type": "Acquisitions",
+      "investmentNeeded": 400000,
+      "investmentGained": 60000,
+      "image": "hotel.webp"
+    },
+    {
+      "id": 3,
+      "name": "Toronto Apartments",
+      "description": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "address": "123 Property Lane",
+      "type": "Acquisitions",
+      "investmentNeeded": 250000,
+      "investmentGained": 150000,
+      "image": "hotel.webp"
+    }
+  ]
+}

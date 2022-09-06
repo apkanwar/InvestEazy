@@ -4,7 +4,7 @@ import BannerNav from '../components/banner_nav'
 import AllProperties from '../components/all_properties'
 import Footer from '../components/footer'
 
-export default function Properties() {
+export default function Properties( { properties } ) {
   return (
     <>
       <Head>
@@ -14,8 +14,19 @@ export default function Properties() {
       </Head>
 
       <BannerNav />
-      <AllProperties />
+      <AllProperties data={ properties } />
       <Footer />
     </>
   )
+}
+
+export async function getStaticProps() {
+  const response = await fetch('http://localhost:4000/properties')
+  const data = await response.json();
+
+  return {
+    props: {
+      properties: data
+    }
+  }
 }
