@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import BannerNav from '../components/banner_nav'
-import AllProperties from '../components/all_properties'
-import Footer from '../components/footer'
+import BannerNav from '../../components/propertiesPage/banner_nav'
+import AllProperties from '../../components/propertiesPage/all_properties'
+import Footer from '../../components/footer'
 
 export default function Properties( { properties } ) {
   return (

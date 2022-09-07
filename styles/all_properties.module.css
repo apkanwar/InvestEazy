@@ -128,6 +128,7 @@
   text-align: center;
   font-weight: 800;
   cursor: pointer;
+  user-select: none;
 }
 .propertyButton:hover {
   transition: 0.3s;

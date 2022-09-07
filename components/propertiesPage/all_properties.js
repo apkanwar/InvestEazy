@@ -1,6 +1,7 @@
-import styles from '../styles/all_properties.module.css'
+import styles from '../../styles/all_properties.module.css'
 import Image from 'next/image'
-import HotelImage from '../public/hotel.webp'
+import HotelImage from '../../public/hotel.webp'
+import Link from 'next/link'
 
 export default function AllProperties({ data }) {
   return (
@@ -34,9 +35,11 @@ export default function AllProperties({ data }) {
                 <p>
                   {property.description}
                 </p>
-                <div className={styles.propertyButton}>
-                  Learn More
-                </div>
+                <Link href={`/properties/${encodeURIComponent(property.id)}`}>
+                  <div className={styles.propertyButton}>
+                    Learn More
+                  </div>
+                </Link>
               </div>
             </div>
           )
@@ -65,7 +68,7 @@ export default function AllProperties({ data }) {
             </div>
           </div>
           <div className={styles.propertyDetails}>
-            <h3>London Apartments</h3>
+            <h3>Markham Apartments</h3>
             <h4>123 Property Lane</h4>
             <p>
               Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
@@ -96,7 +99,7 @@ export default function AllProperties({ data }) {
             </div>
           </div>
           <div className={styles.propertyDetails}>
-            <h3>Brampton Apartments</h3>
+            <h3>Ottawa Apartments</h3>
             <h4>123 Property Lane</h4>
             <p>
               Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
@@ -127,7 +130,7 @@ export default function AllProperties({ data }) {
             </div>
           </div>
           <div className={styles.propertyDetails}>
-            <h3>Toronto Apartments</h3>
+            <h3>Hamilton Apartments</h3>
             <h4>123 Property Lane</h4>
             <p>
               Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.

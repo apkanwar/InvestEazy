@@ -1,6 +1,6 @@
-import styles from '../styles/property_grid.module.css'
+import styles from '../../styles/property_grid.module.css'
 import Image from 'next/image'
-import HotelImage from '../public/hotel.webp'
+import HotelImage from '../../public/hotel.webp'
 import Link from 'next/link'
 
 export default function PropertyGrid() {

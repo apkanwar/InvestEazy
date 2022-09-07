@@ -1,8 +1,8 @@
-import styles from '../styles/full_card.module.css'
+import styles from '../../styles/full_card.module.css'
 import Image from 'next/image'
-import Step1Image from '../public/Stag.svg'
-import Step2Image from '../public/Bear.svg'
-import Step3Image from '../public/Rabbit.svg'
+import Step1Image from '../../public/Stag.svg'
+import Step2Image from '../../public/Bear.svg'
+import Step3Image from '../../public/Rabbit.svg'
 import { useState } from "react"
 
 export default function FullCard() {

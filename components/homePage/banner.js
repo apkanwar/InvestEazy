@@ -1,6 +1,6 @@
-import styles from '../styles/full_banner.module.css'
+import styles from '../../styles/full_banner.module.css'
 
-export default function FullBanner() {
+export default function TopBanner() {
   return (
     <div className={styles.banner}>
       <div className={styles.bannerContent}>

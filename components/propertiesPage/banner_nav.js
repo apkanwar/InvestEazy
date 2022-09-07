@@ -1,6 +1,6 @@
-import styles from '../styles/banner_nav.module.css'
+import styles from '../../styles/banner_nav.module.css'
 import Image from 'next/image'
-import CompanyLogo from '../public/vercel.ico'
+import CompanyLogo from '../../public/vercel.ico'
 import Link from 'next/link'
 
 export default function BannerNav() {
