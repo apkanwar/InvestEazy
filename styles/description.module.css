@@ -1,56 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.banner {
+.section {
   width: 100%;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
-.bannerContent {
-  max-width: 1307px;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 0 2rem;
-}
-/* Clear floats */
-.banner:after {
+.section:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.info {
-  float: right;
+.content_a {
+  max-width: 1307px;
+  margin: auto;
   box-sizing: border-box;
-  width: 50%;
-  padding: 200px 0px 200px 50px;
-  order: 2;
+  padding: 0 2rem;
 }
+.content_a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .imageBox {
   display: flex;
   justify-content: center;
   float: left;
   box-sizing: border-box;
   width: 50%;
-  padding: 200px 0;
+  padding: 200px 0 100px 0;
   order: 1;
 }
-
 .imageBox > span {
   border-radius: 30px;
+}
+
+.info {
+  float: right;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 200px 0px 100px 80px;
+  order: 2;
+  color: #112854;
 }
 
 /* Text */
 .head {
   font-weight: 700;
   font-size: 40px;
-  color: #112854;
+}
+.address {
+  font-weight: 500;
+  font-size: 24px;
 }
 .main {
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 2.5em;
-  color: #112854;
+  white-space: pre-line;
 }
 
 /* Buttons */
@@ -101,4 +109,17 @@
   right: -2px;
   top: -3px;
   transform: rotate(45deg);
+}
+
+
+.content_b {
+  max-width: 1307px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+.content_b:after {
+  content: "";
+  display: table;
+  clear: both;
 }
