@@ -29,7 +29,7 @@
   float: left;
   box-sizing: border-box;
   width: 50%;
-  padding: 200px 0 100px 0;
+  padding: 150px 0 70px 0;
   order: 1;
 }
 .imageBox > span {
@@ -40,7 +40,7 @@
   float: right;
   box-sizing: border-box;
   width: 50%;
-  padding: 200px 0px 100px 80px;
+  padding: 150px 0px 70px 80px;
   order: 2;
   color: #112854;
 }
@@ -49,16 +49,12 @@
 .head {
   font-weight: 700;
   font-size: 40px;
+  margin: 0;
 }
 .address {
   font-weight: 500;
   font-size: 24px;
-}
-.main {
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 2.5em;
-  white-space: pre-line;
+  margin-top: 4px;
 }
 
 /* Buttons */
@@ -67,6 +63,8 @@
   padding: 13px 48px;
   border-radius: 30px;
   background: #112854;
+  position: absolute;
+  right: 40px;
 }
 .button_text {
   height: 18px;
@@ -111,15 +109,54 @@
   transform: rotate(45deg);
 }
 
+.caption {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.investmentStructure {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  width: 100%;
+  padding: 1.5em 0 0 0;
+}
+.name, .value {
+  color: #112854;
+  padding: 1em 0;
+  border-bottom: 1px solid #112854;
+}
+.name {
+  font-weight: 600;
+}
 
 .content_b {
   max-width: 1307px;
   margin: auto;
   box-sizing: border-box;
   padding: 0 2rem;
+  position: relative;
 }
 .content_b:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.aboutProperty {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.sub {
+  height: 50px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 1.5em 0;
+  line-height: 1.5em;
+  white-space: pre-line;
 }

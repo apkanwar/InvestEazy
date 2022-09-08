@@ -1,4 +1,4 @@
-import styles from '../../styles/row_layout.module.css'
+import styles from '../../styles/our_numbers.module.css'
 
 export default function RowLayout() {
   return (

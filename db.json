@@ -9,7 +9,11 @@
       "investmentNeeded": 100000,
       "investmentGained": 25000,
       "image": "hotel.webp",
-      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor."
+      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "annualYeild": 10.5,
+      "targetIRR": 10.5,
+      "antTerm": 2.5,
+      "avgLTV": 62.2
     },
     {
       "id": 2,
@@ -20,7 +24,11 @@
       "investmentNeeded": 400000,
       "investmentGained": 60000,
       "image": "hotel.webp",
-      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor."
+      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "annualYeild": 10.5,
+      "targetIRR": 10.5,
+      "antTerm": 2.5,
+      "avgLTV": 62.2
     },
     {
       "id": 3,
@@ -31,7 +39,11 @@
       "investmentNeeded": 250000,
       "investmentGained": 150000,
       "image": "hotel.webp",
-      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor."
+      "detailedDescription": "Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor. \n\n Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.",
+      "annualYeild": 10.5,
+      "targetIRR": 10.5,
+      "antTerm": 2.5,
+      "avgLTV": 62.2
     }
   ]
 }

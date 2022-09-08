@@ -3,6 +3,7 @@ import Head from "next/head";
 import Navbar from "../../components/navbar";
 import Description from "../../components/propertyDetails/description";
 import Footer from "../../components/footer";
+import PropertyNumbers from "../../components/propertyDetails/numbers";
 
 export default function PropertyDetails({ property }) {
   return (
@@ -15,6 +16,7 @@ export default function PropertyDetails({ property }) {
 
       <Navbar />
       <Description propertyData={property} />
+      <PropertyNumbers propertyData={property} />
       {/* <Footer /> */}
     </>
   )
