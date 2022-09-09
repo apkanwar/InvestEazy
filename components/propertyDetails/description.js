@@ -4,7 +4,7 @@ import ProgressBar from '../miniComponents/progressBar'
 import Image from 'next/image'
 import HotelImage from '../../public/hotel.webp'
 
-export default function PropertyDetails({ propertyData = [] }) {
+export default function PropertyDescription({ propertyData = [] }) {
   return (
     <>
       <div className={styles.section}>

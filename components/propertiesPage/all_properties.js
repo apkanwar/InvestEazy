@@ -15,7 +15,7 @@ export default function AllProperties({ data }) {
           return (
             <div className={styles.info}>
               <div className={styles.imageContainer}>
-                <Image src={"/../public/" + property.image} height={1100} width={1100} />
+                <Image src={`/../public/${property.image}`} height={1100} width={1100} />
                 <div className={styles.progress}>
                   <div className={styles.propertyType}>
                     <div className={styles.type}>
