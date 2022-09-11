@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import BannerNav from '../../components/propertiesPage/banner_nav'
+import BannerNav from '../../components/banner_nav'
 import AllProperties from '../../components/propertiesPage/all_properties'
 import Footer from '../../components/footer'
 
@@ -13,7 +13,7 @@ export default function Properties( { properties } ) {
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
-      <BannerNav />
+      <BannerNav page='properties' />
       <AllProperties data={ properties } />
       <Footer />
     </>

@@ -18,7 +18,9 @@ export default function Navbar() {
         <li className={styles.dropdown}>
           <a className={styles.dropdownLink}>About</a>
           <div className={styles.dropdownContent}>
-            <a>About InvestEazy</a>
+            <Link href="/about/invest-eazy">
+              <a>About InvestEazy</a>
+            </Link>
             <a>About the Properties</a>
           </div>
         </li>

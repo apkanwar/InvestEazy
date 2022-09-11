@@ -4,14 +4,7 @@ import styles from '../../styles/details.module.css'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-import { useEffect } from 'react';
-
 export default function PropertyDetails({ propertyData = [] }) {
-  useEffect(() => {
-    console.log(propertyData)
-  }, [])
-
-
   return (
     <div className={styles.container}>
       <div className={styles.containerContent}>
