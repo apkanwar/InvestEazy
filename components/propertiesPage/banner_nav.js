@@ -16,10 +16,12 @@ export default function BannerNav() {
               </div>
             </Link>
           </li>
-          <li className={styles.navItem}>
-            <a className={styles.pageLink}>
-              About
-            </a>
+          <li className={styles.dropdown}>
+            <a className={styles.dropdownLink}>About</a>
+            <div className={styles.dropdownContent}>
+              <a>About InvestEazy</a>
+              <a>About the Properties</a>
+            </div>
           </li>
           <li className={styles.navItem}>
             <Link href="/properties">
@@ -29,26 +31,26 @@ export default function BannerNav() {
             </Link>
           </li>
           <li className={styles.navItem}>
-          <Link href="/under_construction">
-            <a className={styles.pageLink}>
-              Blog
-            </a>
-          </Link>
-        </li>
-        <li className={styles.navItem}>
-          <Link href="/under_construction">
-            <a className={styles.pageLink}>
-              Reviews
-            </a>
-          </Link>
-        </li>
-        <li className={styles.navItem}>
-          <Link href="/under_construction">
-            <button className={styles.navButton}>
-              Log In
-            </button>
-          </Link>
-        </li>
+            <Link href="/under_construction">
+              <a className={styles.pageLink}>
+                Blog
+              </a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/under_construction">
+              <a className={styles.pageLink}>
+                Reviews
+              </a>
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link href="/under_construction">
+              <button className={styles.navButton}>
+                Log In
+              </button>
+            </Link>
+          </li>
         </ul>
       </nav>
 

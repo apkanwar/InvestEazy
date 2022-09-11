@@ -15,10 +15,12 @@ export default function Navbar() {
             </div>
           </Link>
         </li>
-        <li className={styles.navItem}>
-          <a className={styles.pageLink}>
-            About
-          </a>
+        <li className={styles.dropdown}>
+          <a className={styles.dropdownLink}>About</a>
+          <div className={styles.dropdownContent}>
+            <a>About InvestEazy</a>
+            <a>About the Properties</a>
+          </div>
         </li>
         <li className={styles.navItem}>
           <Link href="/properties">
