@@ -129,3 +129,24 @@
   top: -3px;
   transform: rotate(45deg);
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .imageBoxLeft, .imageBoxRight {
+    width: 100%;
+    padding: 50px 50px;
+  }
+  .infoRight, .infoLeft {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .infoLeft {
+    float: right;
+  }
+  .imageBoxRight {
+    float: left;
+  }
+  .banner {
+    margin: 100px 0;
+  }
+}

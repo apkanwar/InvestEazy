@@ -160,3 +160,18 @@
   line-height: 1.5em;
   white-space: pre-line;
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .imageBox {
+    width: 100%;
+    padding-top: 100px;
+  }
+  .info {
+    width: 100%;
+    padding: 0 0 80px 0;
+  }
+  .content_a, .content_b {
+    padding: 0 80px;
+  }
+}

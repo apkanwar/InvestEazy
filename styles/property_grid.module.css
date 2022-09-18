@@ -117,3 +117,22 @@
   top: -3px;
   transform: rotate(45deg);
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .sectionTitle {
+    padding-top: 100px;
+  }
+  .flexContainer {
+    flex-flow: column wrap;
+  }
+  .info {
+    width: 100%;
+    padding: 0 100px;
+    margin: 50px 0;
+  }
+  .tagContainer {
+    padding-top: 0;
+    padding-right: 8em;
+  }
+}

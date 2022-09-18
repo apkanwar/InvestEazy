@@ -46,12 +46,12 @@
 }
 
 .howItWorks {
-  max-width: 500px;
+  max-width: 720px;
   height: 730px;
   background-color: #F8F7F6;
   border-radius: 30px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 .stepCards {
@@ -121,4 +121,15 @@
   font-size: 20px;
   text-align: center;
   color: #C4C8CB;
+}
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 0 50px;
+    border-radius: 0;
+  }
+  .howItWorks {
+    max-width: fit-content;
+  }
 }

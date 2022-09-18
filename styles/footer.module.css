@@ -103,3 +103,28 @@
   padding-left: 1.5em;
   cursor: pointer;
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .sectionTitle {
+    padding-top: 100px;
+  }
+  .flexContainer {
+    padding: 0 50px;
+    flex-flow: row wrap;
+  }
+  .info {
+    width: 50%;
+  }
+  .icon {
+    width: 33.333333%;
+    margin: 0;
+  }
+  .toc {
+    padding: 50px;
+    margin: 0;
+  }
+  .copy {
+    padding-left: 50px;
+  }
+}

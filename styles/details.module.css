@@ -139,3 +139,39 @@
   display: inline;
   color: #112854;
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .containerContent {
+    padding: 0 50px;
+  }
+  .disclaimer {
+    width: 100%;
+    margin: 1em 0;
+  }
+  .checklist {
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    padding: 1.5em 0 0 0;
+  }
+  .gradesRow {
+    flex-flow: row wrap;
+  }
+  .grades {
+    width: 100%;
+    margin: 0;
+  }
+  .investmentInfo {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .investmentType {
+    margin: auto;
+  }
+  .arrow {
+    display: none;
+  }
+  .question, .answer {
+    text-align: center;
+  }
+}

@@ -149,3 +149,13 @@
 .bottomBorder {
   border-bottom: 1px solid black;
 }
+
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .info {
+    width: 100%;
+    margin: 100px 0 0 0;
+    padding: 0 100px;
+  }
+}

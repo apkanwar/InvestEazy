@@ -42,3 +42,11 @@
   background: #DCDCDC;
   transition: 0.5s;
 }
+
+/* Phone Screens */
+@media screen and (max-width: 720px) {
+  .main {
+    margin-top: 0;
+    text-align: center;
+  }
+}

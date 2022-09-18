@@ -16,7 +16,7 @@ export default function FullCard() {
     <div className={styles.section}>
       <div className={styles.container}>
         <div className={styles.info}>
-          <h2 className={styles.head}>How is InvestEazy THIS easy?</h2>
+          <h2 className={styles.head}>How InvestEazy Works</h2>
           <h3 className={styles.main}>
             We believe our proprietary solution helps to reduce risk in the investment process.
             We execute the entire transaction upfront using our own capital and then give you access on a deal-by-deal basis.

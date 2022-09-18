@@ -16,6 +16,12 @@ a {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 850px) {
+  #__next {
+    width: fit-content;
+  }
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
