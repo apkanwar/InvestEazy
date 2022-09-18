@@ -5,6 +5,7 @@ import Description from "../../components/propertyDetails/description";
 import PropertyNumbers from "../../components/propertyDetails/numbers";
 import Details from "../../components/propertyDetails/details";
 import Footer from "../../components/footer";
+import { properties } from '../../data'
 
 export default function PropertyDetails({ property }) {
   return (
@@ -43,12 +44,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const response = await fetch(`http://localhost:4000/properties/${params.propertyId}`)
-  const data = await response.json();
+  // const response = await fetch(`http://localhost:4000/properties/${params.propertyId}`)
+  // const data = await response.json();
+  const property = properties.filter(p => p.id == params.propertyId)
 
   return {
     props: {
-      property: data
+      property: property[0]
     }
   }
 }
