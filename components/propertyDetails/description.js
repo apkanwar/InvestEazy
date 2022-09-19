@@ -10,7 +10,7 @@ export default function PropertyDescription({ propertyData = [] }) {
       <div className={styles.section}>
         <div className={styles.content_a}>
           <div className={styles.imageBox}>
-            <Image src={HotelImage} width={750} height={650} />
+            <Image src={`/properties/${propertyData.image}`} height={950} width={1100} />
           </div>
           <div className={styles.info}>
             <h2 className={styles.head}>{propertyData.name}</h2>

@@ -15,10 +15,10 @@ export default function PropertyGrid() {
             <Image src={HotelImage} height={1100} />
           </div>
           <div className={styles.propertyDetails}>
-            <h3>Brampton Apartments</h3>
-            <h4>123 Property Lane</h4>
+            <h3>OnPremiere Suites</h3>
+            <h4>Markham, ON</h4>
             <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
+              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Markham area.
             </p>
           </div>
         </div>
@@ -27,10 +27,10 @@ export default function PropertyGrid() {
             <Image src={HotelImage} height={1100} />
           </div>
           <div className={styles.propertyDetails}>
-            <h3>Brampton Apartments</h3>
-            <h4>123 Property Lane</h4>
+            <h3>LIVE Apartments</h3>
+            <h4>Ottawa, ON</h4>
             <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
+              Start to own a newly renovated and fully occupied 25-unit multifamily apartment building in the downtown Ottawa area near to bus routes.
             </p>
           </div>
         </div>
@@ -39,10 +39,10 @@ export default function PropertyGrid() {
             <Image src={HotelImage} height={1100} />
           </div>
           <div className={styles.propertyDetails}>
-            <h3>Brampton Apartments</h3>
-            <h4>123 Property Lane</h4>
+            <h3>BH Apartments</h3>
+            <h4>Halimton, ON</h4>
             <p>
-              Participate in the ownership of a newly renovated and fully occupied 19-unit multifamily apartment building in the Vancouver-Broadway Corridor.
+              Start owning the newly renovated and fully occupied 15-unit multifamily apartment building in a prime Halimton location near McMasters university.
             </p>
           </div>
         </div>

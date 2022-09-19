@@ -63,7 +63,7 @@ export default function FullCard() {
           ) : stepCount === 3 ? (
             <div className={styles.stepCards}>
               <div className={styles.stepHeading}>
-                Step 1
+                Step 3
               </div>
               <div className={styles.stepImage}>
                 <Image src={Step3Image} />
