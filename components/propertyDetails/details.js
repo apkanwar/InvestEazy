@@ -12,7 +12,7 @@ export default function PropertyDetails({ propertyData = [] }) {
           Estimated Returns
         </div>
         <div className={styles.imageBox}>
-          <Image src={`/../public/eReturns-1.png`} layout={'fill'} />
+          <Image src={`/eReturns-${propertyData.id}.png`} layout={'fill'} />
         </div>
         <div className={styles.disclaimer}>
           The information presented above represents expected results of a $1,194,650 maximum offering and may not reflect actual results.
