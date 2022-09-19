@@ -5,6 +5,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 export default function PropertyDetails({ propertyData = [] }) {
+  const i = 
+
   return (
     <div className={styles.container}>
       <div className={styles.containerContent}>
@@ -12,7 +14,7 @@ export default function PropertyDetails({ propertyData = [] }) {
           Estimated Returns
         </div>
         <div className={styles.imageBox}>
-          <Image src={`/../public/eReturns-${propertyData.id}.png`} layout={'fill'} />
+          <Image src={`/../public/eReturns-1.png`} layout={'fill'} />
         </div>
         <div className={styles.disclaimer}>
           The information presented above represents expected results of a $1,194,650 maximum offering and may not reflect actual results.
