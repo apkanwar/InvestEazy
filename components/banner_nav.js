@@ -1,6 +1,6 @@
 import styles from '../styles/banner_nav.module.css'
 import Image from 'next/image'
-import CompanyLogo from '../public/vercel.ico'
+import CompanyLogo from '../public/vercel.png'
 import Link from 'next/link'
 import { useState } from 'react'
 
