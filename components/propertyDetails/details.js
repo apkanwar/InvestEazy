@@ -5,8 +5,6 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 export default function PropertyDetails({ propertyData = [] }) {
-  const i = 
-
   return (
     <div className={styles.container}>
       <div className={styles.containerContent}>
