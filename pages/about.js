@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import BannerNav from '../../components/banner_nav'
-import AboutCards from '../../components/aboutPage/aboutCards'
-import Footer from '../../components/footer'
+import BannerNav from '../components/banner_nav'
+import AboutCards from '../components/aboutPage/aboutCards'
+import Footer from '../components/footer'
 
 export default function AboutInvestEazy() {
   return (

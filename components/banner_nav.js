@@ -31,14 +31,16 @@ export default function BannerNav({ page }) {
               </div>
             </Link>
           </li>
-          <li className={styles.dropdown}>
-            <a className={styles.dropdownLink}>About</a>
-            <div className={styles.dropdownContent}>
-              <Link href="/about/invest-eazy">
+          <li className={styles.navItem}>
+            <Link href="/about">
+              <a className={styles.dropdownLink}>About</a>
+            </Link>
+            {/* <div className={styles.dropdownContent}>
+              <Link href="/about">
                 <a>About InvestEazy</a>
               </Link>
               <a>About the Properties</a>
-            </div>
+            </div> */}
           </li>
           <li className={styles.navItem}>
             <Link href="/properties">
@@ -62,7 +64,7 @@ export default function BannerNav({ page }) {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/under_construction">
+            <Link href="/login">
               <button className={styles.navButton}>
                 Log In
               </button>
@@ -85,7 +87,7 @@ export default function BannerNav({ page }) {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/under_construction">
+            <Link href="/login">
               <button className={styles.navButton}>
                 Log In
               </button>
@@ -95,14 +97,16 @@ export default function BannerNav({ page }) {
       </nav>
       <nav id='navbarP' className={styles.navbarPlus}>
         <ul className={styles.navList}>
-          <li className={styles.dropdown}>
-            <a className={styles.dropdownLink}>About</a>
-            <div className={styles.dropdownContent}>
+          <li className={styles.navItem}>
+            <Link href="/about">
+              <a className={styles.dropdownLink}>About</a>
+            </Link>
+            {/* <div className={styles.dropdownContent}>
               <Link href="/about/invest-eazy">
                 <a>About InvestEazy</a>
               </Link>
               <a>About the Properties</a>
-            </div>
+            </div> */}
           </li>
           <li className={styles.navItem}>
             <Link href="/properties">
