@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar login={false} />
       <HomeBanner />
       <Description />
       <OurNumbers />

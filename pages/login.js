@@ -14,7 +14,7 @@ export default function Login() {
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar login={false} />
       <LoginDetails/>
       <Footer />
     </>

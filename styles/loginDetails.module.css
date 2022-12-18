@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 .loginContainer {
   display: flex;
   justify-content: center;
@@ -44,7 +46,7 @@
   border: 1px solid #28334a;
   height: 48px;
   width: 100%;
-  margin: 8px 0 48px 0;
+  margin-top: 8px;
   font-family: Montserrat;
   font-weight: 600;
   font-size: 18px;
@@ -59,6 +61,7 @@
   justify-content: center;
 }
 .button_text {
+  margin-top: 52px;
   padding: 13px 48px;
   background: white;
   border: 0;
@@ -70,4 +73,14 @@
 .button_text:hover {
   cursor: pointer;
   background: lightgray;
+}
+
+.pageLink {
+  color: #F5BF54;
+  margin-top: 16px;
+  width: fit-content;
+}
+.pageLink:hover {
+  color: #D29723;
+  cursor: pointer
 }

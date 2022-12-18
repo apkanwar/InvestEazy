@@ -16,7 +16,7 @@ export default function UnderConstruction() {
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar login={false} />
       <main className={styles.main}>
         <h1 className={styles.title}>Work in Progess</h1>
         <h3 className={styles.description}>This page is curently under construction. Come back soon to check it out.</h3>

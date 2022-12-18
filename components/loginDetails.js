@@ -28,10 +28,13 @@ export default function LoginDetails() {
 
         <form onSubmit={e => signInClick(e)}>
           <label for="email" className={styles.label}>Email</label>
-          <input id="email" type="text" name="email" className={styles.input} value={formData.email} onChange={e => handleInputChange("email", e?.target?.value || "",) } />
+          <input id="email" type="text" name="email" className={styles.input} value={formData.email} onChange={e => handleInputChange("email", e?.target?.value || "",)} />
 
           <label for="password" className={styles.label}>Password</label>
-          <input id="password" type="text" name="password" className={styles.input} value={formData.password} onChange={e => handleInputChange("password", e?.target?.value || "",) } />
+          <input id="password" type="text" name="password" className={styles.input} value={formData.password} onChange={e => handleInputChange("password", e?.target?.value || "",)} />
+          <div className={styles.pageLink}>
+            Forgot Password
+          </div>
 
           <div className={styles.button}>
             <input type="submit" value="Sign In" className={styles.button_text} />
