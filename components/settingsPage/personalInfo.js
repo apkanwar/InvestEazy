@@ -24,21 +24,6 @@ export default function PersonalInfo() {
 
   return (
     <div className={styles.container}>
-      {/* <div className={styles.titleContainer}>
-        <div className={styles.title}>
-          Personal Info
-        </div>
-        <div className={styles.title}>
-          Preferences
-        </div>
-        <div className={styles.title}>
-          Security
-        </div>
-        <div className={styles.title}>
-          Documents
-        </div>
-      </div> */}
-
       <div className={styles.personalContainer}>
         {/* Name, SignUp Date, Verfied Status */}
         <div className={styles.profileInfo}>

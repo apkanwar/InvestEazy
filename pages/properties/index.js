@@ -3,7 +3,7 @@ import Head from 'next/head'
 import BannerNav from '../../components/banner_nav'
 import AllProperties from '../../components/propertiesPage/all_properties'
 import Footer from '../../components/footer'
-import { properties } from '../../data'
+import { properties } from '../../data/data'
 
 export default function Properties( { properties } ) {
   return (

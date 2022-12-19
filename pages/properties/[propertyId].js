@@ -5,7 +5,7 @@ import Description from "../../components/propertyDetails/description";
 import PropertyNumbers from "../../components/propertyDetails/numbers";
 import Details from "../../components/propertyDetails/details";
 import Footer from "../../components/footer";
-import { properties } from '../../data'
+import { properties } from '../../data/data'
 
 export default function PropertyDetails({ property }) {
   return (

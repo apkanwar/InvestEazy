@@ -1,4 +1,4 @@
-import styles from '../styles/walletBar.module.css'
+import styles from '../styles/wallet.module.css'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';

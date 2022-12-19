@@ -1,6 +1,7 @@
 import styles from '../styles/navbar.module.css'
 import Image from 'next/image'
 import CompanyLogo from '../public/vercel.png'
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import Link from 'next/link'
 import { useState } from 'react'
 
@@ -143,7 +144,7 @@ export default function Navbar({ login }) {
                 </Link>
               </li>
               <li className={styles.dropdown}>
-                <Link href="/wallet">
+                <Link href="/portfolio">
                   <a className={styles.pageLink}>Portfolio</a>
                 </Link>
               </li>
@@ -160,6 +161,11 @@ export default function Navbar({ login }) {
                     Settings
                   </a>
                 </Link>
+              </li>
+              <li className={styles.navItem}>
+                  <a className={styles.pageLink}>
+                    <NotificationsIcon />
+                  </a>
               </li>
             </ul>
           </nav>

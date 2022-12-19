@@ -1,20 +1,20 @@
 import Head from 'next/head'
+import { portfolioData } from '../data/portfolioData'
 
 import Navbar from '../components/navbar'
-import WalletBar from '../components/wallet'
-import { activityData } from '../data/activityData'
+import PortfolioContent from '../components/portfolioContent'
 
-export default function Wallet({ activityData }) {
+export default function Portfolio({ portfolioData }) {
   return (
     <>
       <Head>
-        <title>InvestEazy - Wallet</title>
+        <title>InvestEazy - Portfolio</title>
         <meta name="description" content="Crowdfunding Accredited Investors for Investment Oppourtunities" />
         <link rel="icon" href="/vercel.ico" />
       </Head>
 
       <Navbar login={true} />
-      <WalletBar activityData={ activityData } />
+      <PortfolioContent portfolioData={ portfolioData } />
     </>
   )
 }
@@ -22,7 +22,7 @@ export default function Wallet({ activityData }) {
 export async function getStaticProps() {
   return {
     props: {
-      activityData: activityData
+      portfolioData: portfolioData
     }
   }
 }
