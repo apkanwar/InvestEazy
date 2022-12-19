@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/portfolioContent.module.css'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Accordion({ item }) {
   const [isShowing, setIsShowing] = useState(false);
@@ -43,7 +44,7 @@ export default function Accordion({ item }) {
         </div>
 
         <div className={styles.sectionTitle}>
-          <h1 className={styles.title}>Future Projection</h1>
+          <h1 className={styles.subTitle}>Future Projection</h1>
         </div>
         <div className={styles.future}>
           <div className={styles.info}>
@@ -57,6 +58,25 @@ export default function Accordion({ item }) {
           <div className={styles.info}>
             <h2 className={styles.value}>${item.futureProjections.pessimistic}</h2>
             <h3 className={styles.detail}>Pessimistic</h3>
+          </div>
+        </div>
+
+        <div className={styles.links}>
+          <div className={styles.link}>
+            <span>
+              Offering Memorandum
+            </span>
+            <div className={styles.linkArrow}>
+              <ArrowForwardIcon />
+            </div>
+          </div>
+          <div className={styles.link}>
+            <span>
+              Subscription Aggreement
+            </span>
+            <div className={styles.linkArrow}>
+              <ArrowForwardIcon />
+            </div>
           </div>
         </div>
       </div>

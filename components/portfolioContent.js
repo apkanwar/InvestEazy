@@ -4,7 +4,9 @@ import Accordion from './miniComponents/accordion'
 export default function PortfolioContent({ portfolioData }) {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Portfolio Summary</h2>
+      <div className={styles.title}>
+        Portfolio Summary
+      </div>
       <div className={styles.portfolioContainer}>
         <div className={styles.header}>
           <div className={styles.pInvestment}>

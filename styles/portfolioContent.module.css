@@ -37,6 +37,7 @@
   padding: 2em 3em;
   align-items: center;
   border-top: 1px solid lightblue;
+  user-select: none;
 }
 .activity:last-child {
   border-radius: 0 0 24px 24px;
@@ -101,6 +102,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  user-select: none;
 }
 
 .label {
@@ -145,8 +147,43 @@
   padding-top: 1em;
 }
 
-.title {
+.subTitle {
   font-weight: 700;
   font-size: 20px;
   color: #112854;
+}
+
+.links {
+  display: flex;
+  width: 100%;
+  border-radius: 12px;
+  background-color: white;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  padding: 48px 100px;
+  justify-content: center;
+}
+
+.link {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 28px 48px;
+  margin: 12px auto;
+  font-size: 16px;
+  align-items: center;
+}
+
+.link:hover {
+  cursor: pointer;
+  background: lightgray;
+  border: 2px solid black;
+}
+
+.linkArrow {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: auto;
 }
