@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Checkmark from '../../public/check.svg'
+import CheckIcon from '@mui/icons-material/Check';
 import styles from '../../styles/details.module.css'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
@@ -30,7 +30,7 @@ export default function PropertyDetails({ propertyData = [] }) {
           {propertyData.highlights.map(highlight => {
             return (
               <>
-                <Image src={Checkmark} width={16} height={16} />
+                <CheckIcon />
                 <div className={styles.checklistItem}>
                   {highlight}
                 </div>

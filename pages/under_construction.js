@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/under_construction.module.css'
 
 import Navbar from '../components/navbar'
-import FacebookIcon from '../public/facebook.svg'
-import InstagramIcon from '../public/instagram.svg'
-import LinkedInIcon from '../public/linkedin.svg'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export default function UnderConstruction() {
   return (
@@ -22,14 +21,14 @@ export default function UnderConstruction() {
         <h3 className={styles.description}>This page is curently under construction. Come back soon to check it out.</h3>
 
         <div className={styles.icons}>
-          <div className={styles.icon}>
-            <Image src={FacebookIcon} width={48} height={48} />
+          <div className={styles.socialMediaButton}>
+            <FacebookIcon sx={{fontSize: 64}} />
           </div>
-          <div className={styles.icon}>
-            <Image src={InstagramIcon} width={48} height={48} />
+          <div className={styles.socialMediaButton}>
+            <InstagramIcon sx={{fontSize: 64}} />
           </div>
-          <div className={styles.icon}>
-            <Image src={LinkedInIcon} width={48} height={48} />
+          <div className={styles.socialMediaButton}>
+            <LinkedInIcon sx={{fontSize: 64}} />
           </div>
         </div>
       </main>

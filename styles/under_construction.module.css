@@ -32,15 +32,16 @@
   bottom: 100px;
 }
 
-.icon {
-  padding: 10px 35px;
-  text-align: center;
+.socialMediaButton {
+  width: fit-content;
+  padding: 0.5em 0.5em 0.4em 0.5em;
   border-radius: 12px;
-  cursor: pointer;
+  margin-left: 12px;
 }
-.icon:hover {
-  background: #DCDCDC;
-  transition: 0.5s;
+
+.socialMediaButton:hover {
+  background-color: rgba(173, 216, 230, 0.5);
+  cursor: pointer;
 }
 
 /* Phone Screens */

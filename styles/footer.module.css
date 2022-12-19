@@ -12,91 +12,71 @@
   clear: both;
 }
 
-.sectionTitle {
-  text-align: center;
+.footerBar {
+  display: flex;
+  flex-direction: row;
   max-width: 1307px;
-  margin: auto;
-  width: 100%;
+  margin: 2em auto;
 }
 
-.flexContainer {
-  max-width: 1307px;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 0 2rem;
-  display: flex;
-}
-
-.toc {
-  max-width: 1100px;
-  margin: auto;
-  box-sizing: border-box;
-  padding: 0 2rem 0 5rem;
-  display: flex;
-  text-align: justify;
-  margin-bottom: 40px;
-}
 .copy {
-  max-width: 1100px;
-  margin: auto;
   box-sizing: border-box;
-  padding: 0 2rem 0 5rem;
   margin-bottom: 100px;
+  padding: 0 32px;
+  text-align: start;
 }
 
-.info {
-  width: 33.3333333%;
-  padding: 10px 0px;
-  margin: 80px 0px 50px 0px;
-  text-align: center;
+.iconButton {
+  padding: 0.5em 0.5em 0.4em 0.5em;
+  width: fit-content;
+  margin: auto;
   border-radius: 12px;
+}
+.socialMediaButton {
+  width: fit-content;
+  padding: 0.5em 0.5em 0.4em 0.5em;
+  border-radius: 12px;
+  margin-left: 12px;
+  margin-top: 0.5em;
+}
+.iconButton:hover,
+.socialMediaButton:hover {
+  background-color: rgba(173, 216, 230, 0.5);
   cursor: pointer;
 }
-.info:hover {
-  background: #DCDCDC;
-  transition: 0.5s;
+
+.contact {
+  padding: 0 32px;
 }
 
-.icon {
-  width: 11.1111111%;
-  padding: 10px 0px;
-  margin: 80px 0px 50px 0px;
-  text-align: center;
-  border-radius: 12px;
-  cursor: pointer;
+.contactRow {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 1em;
+  justify-content: flex-end;
+  align-items: center;
 }
-.icon:hover {
-  background: #DCDCDC;
-  transition: 0.5s;
+.contactText {
+  padding-right: 1em;
 }
 
-/* Text */
-.title {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 0;
-  color: #112854;
+.copy,
+.toc,
+.contact {
+  width: 33.333333%;
 }
-.value {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5em;
-  display: inline;
-  color: #112854;
-}
+
 .bottomTitle {
   font-weight: 500;
   font-size: 24px;
-  line-height: 0;
   color: #112854;
 }
 .bottomLinks {
   font-weight: 400;
   font-size: 16px;
-  line-height: 0;
   color: darkgray;
-  padding-top: 4px;
   display: inline-block;
+  padding-top: 0.5em;
 }
 .link {
   display: inline-block;
@@ -104,26 +84,28 @@
   cursor: pointer;
 }
 
+.floatingModal {
+  width: fit-content;
+  margin: auto;
+}
+
+.modalBlock {
+  position: relative;
+}
+
+.modalText {
+  position: absolute;
+  bottom: 50px;
+  left: -625px;
+  padding: 32px;
+  background-color: white;
+  min-width: 1307px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
 /* Phone Screens */
 @media screen and (max-width: 720px) {
-  .sectionTitle {
-    padding-top: 100px;
-  }
-  .flexContainer {
-    padding: 0 50px;
-    flex-flow: row wrap;
-  }
-  .info {
-    width: 50%;
-  }
-  .icon {
-    width: 33.333333%;
-    margin: 0;
-  }
-  .toc {
-    padding: 50px;
-    margin: 0;
-  }
   .copy {
     padding-left: 50px;
   }

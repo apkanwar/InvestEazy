@@ -2,7 +2,6 @@ import styles from '../../styles/description.module.css'
 import ProgressBar from '../miniComponents/progressBar'
 
 import Image from 'next/image'
-import HotelImage from '../../public/hotel.webp'
 
 export default function PropertyDescription({ propertyData = [] }) {
   return (

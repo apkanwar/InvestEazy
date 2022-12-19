@@ -38,6 +38,7 @@
   grid-template-columns: repeat(4, auto);
   width: 100%;
   padding: 1.5em 0 0 0;
+  align-items: center;
 }
 
 .gradesRow {
