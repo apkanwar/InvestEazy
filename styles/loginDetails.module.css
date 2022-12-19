@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.loginContainer {
+.mainContainer {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -31,6 +31,12 @@
   text-align: center;
   margin-bottom: 42px;
   color: #FFF;
+}
+
+.subheader {
+  font-size: 20px;
+  text-align: center;
+  color: white
 }
 
 .label, .input {
@@ -81,6 +87,18 @@
   width: fit-content;
 }
 .pageLink:hover {
+  color: #D29723;
+  cursor: pointer
+}
+
+.signUpText {
+  color: white;
+  margin-top: 2.5em;
+}
+.signUpText span {
+  color: #F5BF54;
+}
+.signUpText span:hover {
   color: #D29723;
   cursor: pointer
 }

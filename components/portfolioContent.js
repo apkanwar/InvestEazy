@@ -1,6 +1,5 @@
 import styles from '../styles/portfolioContent.module.css'
-import Image from 'next/image'
-import Link from 'next/link'
+import Accordion from './miniComponents/accordion'
 
 export default function PortfolioContent({ portfolioData }) {
   return (
@@ -17,27 +16,7 @@ export default function PortfolioContent({ portfolioData }) {
         </div>
         {portfolioData.slice(0, 10).reverse().map(item => {
           return (
-            <div className={styles.activity}>
-              <div className={styles.pImage}>
-                <Image src={`/properties/${item.image}`} height={100} width={100} />
-              </div>
-              <div className={styles.pDetails}>
-                <div className={styles.pName}>
-                  <Link href={`/properties/${encodeURIComponent(item.pID)}`}>
-                    {item.name}
-                  </Link>
-                </div>
-                <div className={styles.pAddress}>
-                  {item.address}
-                </div>
-              </div>
-              <div className={styles.pInvestment}>
-                ${item.invested}
-              </div>
-              <div className={styles.pIRR}>
-                {item.irr}%
-              </div>
-            </div>
+            <Accordion item={ item } />
           )
         })}
       </div>
