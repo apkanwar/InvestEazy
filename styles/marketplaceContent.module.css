@@ -4,7 +4,7 @@
   width: 100%;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  max-width: 1212px;
+  max-width: 1600px;
   margin: auto;
   padding: 0 2rem;
 }
@@ -27,27 +27,32 @@
   width: 100%;
   border-radius: 24px;
   background-color: white;
-  margin: 64px auto;
-}
-
-.pInvestment {
-  margin-left: auto;
-  font-size: 20px;
-}
-.pIRR {
-  margin-left: 4em;
-  font-size: 20px;
+  margin: 15px auto;
 }
 
 .header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 2em 3em;
+  padding: 1em 3em;
   font-weight: 700;
+  font-size: 16px;
+  justify-content: flex-end;
 }
-.header div, .pInvestment, .pIRR {
-  min-width: 180px;
-  max-width: 180px;
-  text-align: end;
+.header div {
+  min-width: 200px;
+  text-align: center;
+  border-left: 1px solid black;
+}
+.lastHeader {
+  border-right: 1px solid black;
+}
+
+.list {
+  display: contents;
+}
+
+.sort {
+  display: flex;
+  flex-direction: row;
 }

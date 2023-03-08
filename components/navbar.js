@@ -136,16 +136,19 @@ export default function Navbar({ login }) {
           <nav className={styles.navbar}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <Link href="/">
                   <div className={styles.navLogo}>
                     <Image src={CompanyLogo} width={48} height={48} />
                     <span>InvestEazy</span>
                   </div>
-                </Link>
               </li>
               <li className={styles.dropdown}>
                 <Link href="/portfolio">
                   <a className={styles.pageLink}>Portfolio</a>
+                </Link>
+              </li>
+              <li className={styles.dropdown}>
+                <Link href="/marketplace">
+                  <a className={styles.pageLink}>Marketplace</a>
                 </Link>
               </li>
               <li className={styles.navItem}>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../../styles/portfolioContent.module.css'
+import styles from '../../styles/miniComponents/accordian.module.css'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Accordion({ item }) {
