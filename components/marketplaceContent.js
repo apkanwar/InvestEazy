@@ -12,18 +12,20 @@ const StyledTextBox = styled(TextField)({
 });
 
 const sortOptions = [
-  { label: 'Closing Date (Old to New)', value: 1 },
-  { label: 'Closing Date (New to Old)', value: 2 }
+  { label: 'Min Investment (High to Low)', value: 1 },
+  { label: 'Min Investment (Low to High)', value: 2 },
+  { label: 'Closing Date (Farthest First)', value: 3 },
+  { label: 'Closing Date (Closest First)', value: 4 }
 ];
 
 export default function MarketplaceContent({ data }) {
-  const [listings, setListings] = useState(data);
+  const [housesToShow, setHousesToShow] = useState([]);
   const [selectedSortValue, setSelectedSortValue] = useState('0');
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    searchListings();
-  }, [searchTerm]);
+    sortandSearchListings();
+  }, [selectedSortValue, searchTerm]);
 
   const handleSortChange = (event) => {
     setSelectedSortValue(event.target.value);
@@ -33,37 +35,38 @@ export default function MarketplaceContent({ data }) {
     setSearchTerm(event.target.value);
   };
 
-  const searchListings = () => {
-    let searchedListings = listings;
-
-    if (searchTerm != '') {
-      searchedListings = searchedListings.filter(listing => listing.name.toLowerCase().includes(searchTerm.toLowerCase()));
-      setListings(searchedListings);
-    }
-    else {
-      setListings(data);
-    }
-  };
-
-  const sortListings = () => {
+  const sortandSearchListings = () => {
     let sortedListings = [];
 
     switch (selectedSortValue) {
       case 1:
-        sortedListings = data.sort((a, b) => getClosingDate(b.closingDate) - getClosingDate(a.closingDate));
+        sortedListings = [...data].sort((a, b) => b.minInvestment - a.minInvestment);
         console.log(sortedListings)
         break;
       case 2:
-        sortedListings = data.sort((a, b) => getClosingDate(a.closingDate) - getClosingDate(b.closingDate));
+        sortedListings = [...data].sort((a, b) => a.minInvestment - b.minInvestment);
+        console.log(sortedListings)
+        break;
+      case 3:
+        sortedListings = [...data].sort((a, b) => new Date(b.closingDate) - new Date(a.closingDate));
+        console.log(sortedListings)
+        break;
+      case 4:
+        sortedListings = [...data].sort((a, b) => new Date(a.closingDate) - new Date(b.closingDate));
         console.log(sortedListings)
         break;
       default:
-        sortedListings = data.sort((a, b) => getClosingDate(a.id) - getClosingDate(b.id));
+        sortedListings = [...data].sort((a, b) => a.id - b.id);
         console.log(sortedListings)
         break;
     }
 
-    setListings(sortedListings);
+    if (searchTerm != '') {
+      setHousesToShow(sortedListings.filter(listing => listing.name.toLowerCase().includes(searchTerm.toLowerCase())));
+    }
+    else {
+      setHousesToShow(sortedListings);
+    }
   };
 
   return (
@@ -76,7 +79,7 @@ export default function MarketplaceContent({ data }) {
         <Autocomplete sx={{ minWidth: '80%', paddingRight: '1em' }}
           id="Search"
           freeSolo
-          options={listings.map((option) => option.name)}
+          options={housesToShow.map((option) => option.name)}
           renderInput={(params) => <StyledTextBox {...params}
             label="Search (By Name)"
             sx={{ borderRadius: '24px', backgroundColor: 'white' }}
@@ -125,7 +128,7 @@ export default function MarketplaceContent({ data }) {
           </div>
         </div>
         <div className={styles.list}>
-          {listings.map(listing => (
+          {housesToShow.map(listing => (
             <Link key={listing.id} href={`/properties/${listing.id}`}>
               <List item={listing} />
             </Link>
