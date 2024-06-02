@@ -2,7 +2,7 @@ import styles from '@/styles/wallet.module.css'
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import Image from 'next/image'
-import BankLogo from '../../../public/favicon.ico'
+import BankLogo from '../../../public/td_icon.png'
 
 export default function WalletBar({ activityData }) {
   return (
